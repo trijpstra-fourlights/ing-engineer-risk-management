@@ -7,6 +7,7 @@ concurrency:
 on:
   pull_request:
   workflow_call:
+  workflow_dispatch:
 
 jobs:
   test:
@@ -32,8 +33,4 @@ jobs:
 
       - name: Test with pytest  
         run: |  
-          coverage run -m pytest  -v -s  
-
-      - name: Generate Coverage Report  
-        run: |  
-          coverage report -m
+          python -m pytest -v -s  
