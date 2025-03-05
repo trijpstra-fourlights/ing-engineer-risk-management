@@ -1,4 +1,3 @@
-#%% md
 ## Answer 1 - Option
 
 * Implied Volatility (IV) provides a prediction of the future, while Historical Volatility (HV) provides an observation of the past.
@@ -26,5 +25,4 @@ Refer to `options.py` for the implementation and `options_test.py` for both unit
 ## Answer 4 - VaR
 
 Refer to `var.py` for the implementation  and `var_test.py` for both unit- and end-to-end tests.
-#%%
 
