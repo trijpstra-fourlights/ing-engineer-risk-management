@@ -20,9 +20,9 @@ Because VaR is used in risk management, and specifically to reduce portfolio ris
 
 ## Answer 3 - Option
 
-Refer to `options.py` for the implementation and `options_test.py` for both unit- and end-to-end tests.
+Refer to [options.py](https://github.com/trijpstra-fourlights/trm-engineering-interview/blob/main/src/options.py) for the implementation and [options_test.py](https://github.com/trijpstra-fourlights/trm-engineering-interview/blob/main/src/options_test.py) for both unit- and end-to-end tests.
 
 ## Answer 4 - VaR
 
-Refer to `var.py` for the implementation  and `var_test.py` for both unit- and end-to-end tests.
+Refer to [var.py](https://github.com/trijpstra-fourlights/trm-engineering-interview/blob/main/src/var.py) for the implementation  and [var_test.py](https://github.com/trijpstra-fourlights/trm-engineering-interview/blob/main/src/var_test.py) for both unit- and end-to-end tests.
 
