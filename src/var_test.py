@@ -25,8 +25,8 @@ def test_calculate_returns(prices, horizon, ascending, expected):
 @pytest.mark.parametrize(
     "portfolio, prices, expected",
     [
-        ({"FX-1": [100.00]}, {"FX-1": [1, 1.1, 0.9, 0.8]}, -6.909090),
-        ({"FX-1": [100.00]}, {"FX-1": [1, 0.9, 0.8, 0.8]}, -10.66666),
+        ({"FX-1": [100.00]}, {"FX-1": [1, 1.1, 1.0, 0.9, 0.8]}, -9.454545),
+        ({"FX-1": [100.00]}, {"FX-1": [1, 0.9, 1.0, 0.8, 0.8]}, -4.0),
     ],
 )
 def test_var(portfolio, prices, expected):
@@ -39,6 +39,7 @@ def test_end_to_end():
         os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "var_fx_prices.csv"),
         parse_dates=["date"],
         index_col="date",
+        dayfirst=True,
         dtype=float,
     )
     fx_prices.sort_index(inplace=True, ascending=True)

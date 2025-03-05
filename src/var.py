@@ -17,4 +17,4 @@ def var(portfolio, prices, sort="ascending"):
     pnl = portfolio.dot(returns.T)
     daily_pnl = pnl.sum(axis=0)
     daily_pnl_asc = daily_pnl.sort_values(ascending=True)
-    return 0.4 * daily_pnl_asc[1] + 0.6 * daily_pnl_asc[2]
+    return 0.4 * daily_pnl_asc.iloc[1] + 0.6 * daily_pnl_asc.iloc[2]
